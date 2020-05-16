@@ -63,7 +63,9 @@ print(f)
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-g = [Human(human.name.upper(),human.age+5) for human in humans]
+
+# Trying to instantiate a new Human for each human in humans and pass args in, geting "tuple not callable" error
+g = [Human(human.name.upper(), human.age+5) for human in humans]
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
